@@ -1,0 +1,58 @@
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 1000;
+    background-color: #282832;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    gap: 28%;
+
+}
+
+#logo {
+    width: 100px;
+    left: 0;
+    height: 50px;
+    z-index: 1001;
+
+}
+
+.nav-bar nav {
+    display: flexbox;
+    flex-direction: column;
+    align-self: center;
+
+
+}
+
+.nav-bar nav ul {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 20px;
+
+
+
+}
+
+.nav-bar nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.nav-bar nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-bar nav ul li a {
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    color: #c6d6d6;
+}
