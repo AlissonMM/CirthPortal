@@ -56,3 +56,12 @@
     font-weight: bold;
     color: #c6d6d6;
 }
+
+.nav-bar nav ul li:hover {
+    text-decoration: none;
+    text-transform: none;
+    color: #000000;
+    background-color: #77181e;
+    border-radius: 20px;
+    padding: 0 40px;
+}

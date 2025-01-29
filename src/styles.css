@@ -1,130 +1,15 @@
+@font-face {
+    font-family: 'CirthFont'; /* Name your font family */
+    src: url('C:/Users/aliss/AppData/Local/Microsoft/Windows/Fonts/Erebcap1.ttf'); /* Locate the .ttf file within your directory*/
+  }
+
+  @font-face {
+    font-family: 'TengwarFont'; /* Name your font family */
+    src: url('C:/Users/aliss/AppData/Local/Microsoft/Windows/Fonts/tengwarfeanorregular.ttf'); /* Locate the .ttf file within your directory*/
+  }
+
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #dee7e7;
 }
 
-.nav-bar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    z-index: 1000;
-    background-color: #282832;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
-    gap: 28%;
-
-}
-
-#logo {
-    width: 100px;
-    left: 0;
-    height: 50px;
-    z-index: 1001;
-
-}
-
-.nav-bar nav {
-    display: flexbox;
-    flex-direction: column;
-    align-self: center;
-
-
-}
-
-.nav-bar nav ul {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    gap: 20px;
-
-
-
-}
-
-.nav-bar nav ul li {
-    display: inline-block;
-    padding: 0 40px;
-}
-
-.nav-bar nav ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-.nav-bar nav ul li a {
-    text-decoration: none;
-    font-size: larger;
-    font-weight: bold;
-    color: #c6d6d6;
-}
-
-
-
-
-
-
-
-.menu-bar {
-    background-color: #77181e;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    height: 91.6%;
-    left: 0;
-    bottom: 0;
-    align-items: center;
-    box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.4);
-    z-index: 999;
-}
-
-
-.menu-bar nav ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-.menu-bar nav ul li {
-    margin-top: 80%;
-    margin-bottom: 50%;
-
-}
-
-.menu-bar nav ul li a {
-    text-decoration: none;
-    font-size: larger;
-    font-weight: bold;
-    color: #c6d6d6;
-}
-
-#middleContent{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    width: 80%;
-    height: 91.6%;
-    align-items: center;
-    justify-content: center;
-}
-
-.content {
-    display: flex;
-    
-    width: 80vh;
-    background-color: #a92727;
-    border-radius: 25px;
-    height: 90%;
-    padding: 3vh;
-}
-
-.content h1{
-    color: #c6d6d6;
-    font-size: 20px;
-    line-height: 30px;
-    text-justify: justify;
-}

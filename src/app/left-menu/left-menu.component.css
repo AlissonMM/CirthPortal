@@ -10,17 +10,24 @@
     align-items: center;
     box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.4);
     z-index: 999;
+
 }
 
 
 .menu-bar nav ul {
     padding: 0;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
 }
 
 .menu-bar nav ul li {
-    margin-top: 80%;
-    margin-bottom: 50%;
+    padding: 10px 2px;
+    display: flex;
+    text-align: center;
 
 }
 
@@ -29,4 +36,10 @@
     font-size: larger;
     font-weight: bold;
     color: #c6d6d6;
+}
+
+.menu-bar nav ul li:hover {
+    background-color: #282832;
+    border-radius: 10px;
+    padding: 10px 2px;
 }
