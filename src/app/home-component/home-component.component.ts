@@ -9,5 +9,5 @@ import { MiddleContentComponent } from '../middle-content/middle-content.compone
   styleUrl: './home-component.component.css'
 })
 export class HomeComponentComponent {
-
+  
 }

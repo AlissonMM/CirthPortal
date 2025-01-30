@@ -15,6 +15,8 @@
 
 }
 
+
+
 .content {
     display: flex;
     width: 80vh;
@@ -29,20 +31,23 @@
     gap: 0vh;
     overflow: auto;
     font-family: 'CirthFont',;
+  
     
 }
 
 .content a{
     text-decoration: none;
     cursor: auto ;
+    
 }
 
 .content h1{
     color: #c6d6d6;
     font-size: 30px;
     line-height: 5px;
-    text-justify: justify;
+    text-align: center;
 }
+
 
 .content h2{
     color: #c6d6d6;
