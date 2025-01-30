@@ -4,10 +4,14 @@
 
   <nav>
     <ul>
-      <li> <a href="">Home</a> </li>
-      <li> <a href="">Cirth</a> </li>
+      <li> <a [routerLink]="'home'">Home</a> </li>
+      <li> <a [routerLink]="'cirth-page'">Cirth</a> </li>
       <li> <a href="">Tengwar</a> </li>
     </ul>
+
+    
   </nav>
+  
 
 </section>
+<router-outlet></router-outlet>
