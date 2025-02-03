@@ -5,7 +5,7 @@ import { LeftMenuComponent } from './left-menu/left-menu.component';
 import { MiddleContentComponent } from './middle-content/middle-content.component';
 import {CirthPageComponent} from './cirth-page/cirth-page.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
-
+import { TengwarComponent } from './tengwar/tengwar.component';
 
 
 
@@ -18,4 +18,6 @@ export const routes: Routes = [
     { path: 'cirth-header', component: CirthHeaderComponent },
     { path: 'left-menu', component: LeftMenuComponent },
     { path: 'middleContent', component: MiddleContentComponent },
+    { path: 'tengwar', component: TengwarComponent },
+    
 ];

@@ -1,8 +1,4 @@
 
-  
-
-
-
 #middleContent{
     position: absolute;
     right: 0;
@@ -15,6 +11,33 @@
 
 }
 
+p{
+    text-align: justify;
+}
+
+span{
+    font-weight: bolder;
+    color: #e1db88;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #282832;;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #282832;
+    color: #f0c505;
+}
 
 
 .content {

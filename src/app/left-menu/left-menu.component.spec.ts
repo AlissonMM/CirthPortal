@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LeftMenuComponent } from './left-menu.component';
+import { RouterLink, RouterModule } from '@angular/router';
 
 describe('LeftMenuComponent', () => {
   let component: LeftMenuComponent;
@@ -8,7 +9,7 @@ describe('LeftMenuComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LeftMenuComponent]
+      imports: [LeftMenuComponent, RouterLink, RouterModule]
     })
     .compileComponents();
 
