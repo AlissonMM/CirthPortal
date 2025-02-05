@@ -53,6 +53,8 @@
   /* Quando o menu estiver aberto */
   .side-menu.open {
     left: 0;
+
+    
   }
   
   /* Botão de fechar */

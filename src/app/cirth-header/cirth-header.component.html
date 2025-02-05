@@ -5,13 +5,15 @@
   </div>
 </header>
 
-<!-- Menu Lateral!-->
-<nav class="side-menu" [class.open]="menuOpen">
+<!-- Menu Lateral -->
+<nav class="side-menu" [ngClass]="{ 'open': menuOpen }">
   <button class="close-btn" (click)="toggleMenu()">×</button>
   <ul>
-    <li><a href="#section1" (click)="toggleMenu()">Seção 1</a></li>
-    <li><a href="#section2" (click)="toggleMenu()">Seção 2</a></li>
-    <li><a href="#section3" (click)="toggleMenu()">Seção 3</a></li>
+    <li><a routerLink="/" (click)="toggleMenu()">Home</a></li>
+    <li><a routerLink="/cirth-page" (click)="toggleMenu()">Cirth Page</a></li>
+    <li><a routerLink="tengwar" (click)="toggleMenu()">Tengwar</a></li>
   </ul>
 </nav>
+
+
 <router-outlet></router-outlet>

@@ -1,4 +1,5 @@
-<section id="middleContent">
-  <section class="content">
+<section class="middleContent" >
+  <section class="content" [ngClass]="{ 'open': menuOpen }">
     <div [innerHTML]="content"></div>
   </section>
+</section>

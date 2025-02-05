@@ -1,15 +1,18 @@
-
-#middleContent{
+.middleContent{
     position: fixed; /* Mantém fixo na tela */
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%); /* Centraliza exatamente */
     display: flex;
     width: 80%;
-    height: 80%; /* Ajustado para melhor proporção */
+    height: 92%; /* Ajustado para melhor proporção */
     align-items: center;
     justify-content: center;
 
+}
+
+.middleContent.menu-open {
+    transform: translate(-100%, -50%); /* Empurra para a esquerda quando o menu estiver aberto */
 }
 
 p{
@@ -42,6 +45,24 @@ th {
 
 
 .content {
+    display: flex;
+    width: 100vh;
+    background-color: #a92727;
+    border-radius: 25px;
+    height: 90%;
+    padding: 3vh;
+    flex-direction: column;
+    color: #c6d6d6;
+    align-items: center;
+    font-size: 20px;
+    gap: 0vh;
+    overflow: auto;
+    font-family: 'CirthFont',;
+  
+    
+}
+
+.content.open {
     display: flex;
     width: 80vh;
     background-color: #a92727;

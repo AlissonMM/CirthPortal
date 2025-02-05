@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { LeftMenuComponent } from '../left-menu/left-menu.component';
 import { MiddleContentComponent } from '../middle-content/middle-content.component';
 
 @Component({
-  selector: 'app-tengwar',
-  imports: [LeftMenuComponent, MiddleContentComponent],
+  selector: 'tengwar',
+  standalone: true,
+  imports: [MiddleContentComponent],
   templateUrl: './tengwar.component.html',
   styleUrl: './tengwar.component.css'
 })
