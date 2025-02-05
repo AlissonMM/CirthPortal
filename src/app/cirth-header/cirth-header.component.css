@@ -1,67 +1,89 @@
-.nav-bar {
+.header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-start;
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 10px;
     z-index: 1000;
-    background-color: #282832;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
-    gap: 28%;
+  }
 
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative; /* Para posicionar o botão corretamente */
 }
 
-#logo {
+.header #logo {
     width: 100px;
-    left: 0;
     height: 50px;
     z-index: 1001;
 
 }
 
-.nav-bar nav {
-    display: flexbox;
-    flex-direction: column;
-    align-self: center;
-
-
+.menu-btn {
+    position: absolute;
+    left: 20px; /* Mantém o botão à esquerda */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
 }
 
-.nav-bar nav ul {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    gap: 20px;
-
-
-
-}
-
-.nav-bar nav ul li {
-    display: inline-block;
-    padding: 0 40px;
-}
-
-.nav-bar nav ul {
+  /* Menu lateral */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding-top: 60px;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  /* Quando o menu estiver aberto */
+  .side-menu.open {
+    left: 0;
+  }
+  
+  /* Botão de fechar */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Estilos da lista */
+  .side-menu ul {
+    list-style: none;
     padding: 0;
-    list-style-type: none;
-}
-
-.nav-bar nav ul li a {
+  }
+  
+  .side-menu li {
+    padding: 10px;
+  }
+  
+  .side-menu a {
     text-decoration: none;
-    font-size: larger;
-    font-weight: bold;
-    color: #c6d6d6;
-}
-
-.nav-bar nav ul li:hover {
-    text-decoration: none;
-    text-transform: none;
-    color: #000000;
-    background-color: #77181e;
-    border-radius: 20px;
-    padding: 0 40px;
-}
+    color: white;
+    display: block;
+    padding: 10px;
+  }
+  
+  .side-menu a:hover {
+    background-color: #444;
+  }

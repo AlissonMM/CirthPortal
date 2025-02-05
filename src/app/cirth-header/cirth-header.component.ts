@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterOutlet, RouterLink } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-cirth-header',
-  imports: [RouterOutlet, RouterLink],
+  selector: 'app-header',
+  imports: [RouterLink, RouterOutlet],
+  standalone: true, 
   templateUrl: './cirth-header.component.html',
   styleUrl: './cirth-header.component.css'
 })
 export class CirthHeaderComponent {
+  menuOpen = false;
 
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
 }

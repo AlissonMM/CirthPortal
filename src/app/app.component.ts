@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterLink,RouterOutlet } from '@angular/router';
-import { CirthHeaderComponent } from './cirth-header/cirth-header.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { LeftMenuComponent } from './left-menu/left-menu.component';
 import { MiddleContentComponent } from './middle-content/middle-content.component';
+import { CirthHeaderComponent } from './cirth-header/cirth-header.component';
+import { CirthPageComponent } from "./cirth-page/cirth-page.component";
 
 @Component({
   selector: 'app-root',
@@ -10,10 +11,9 @@ import { MiddleContentComponent } from './middle-content/middle-content.componen
   imports: [
     RouterOutlet, // Importa o RouterOutlet para as rotas
     RouterLink,
-    CirthHeaderComponent, // Importa o componente CirthHeader
-    LeftMenuComponent, // Importa o componente LeftMenu
-    MiddleContentComponent, // Importa o componente MiddleContent
-  ],
+    CirthHeaderComponent,
+    CirthPageComponent
+],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'], 
 })

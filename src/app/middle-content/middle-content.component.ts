@@ -1,4 +1,4 @@
-import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { Component, Input, ViewEncapsulation, AfterViewInit, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-middle-content',

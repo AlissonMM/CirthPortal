@@ -1,17 +1,17 @@
-<section class="nav-bar">
-    
-  <img src="/CirthPortalLogo.png" alt="logo" id="logo"/>
+<header class="header">
+  <div class="container">
+    <button class="menu-btn" (click)="toggleMenu()">☰</button>
+    <img src="/CirthPortalLogo.png" alt="logo" id="logo" />
+  </div>
+</header>
 
-<nav>
+<!-- Menu Lateral!-->
+<nav class="side-menu" [class.open]="menuOpen">
+  <button class="close-btn" (click)="toggleMenu()">×</button>
   <ul>
-    <li> <a [routerLink]="'home'">Home</a> </li>
-    <li> <a [routerLink]="'cirth-page'">Cirth</a> </li>
-    <li> <a [routerLink]="'tengwar'">Tengwar</a> </li>
+    <li><a href="#section1" (click)="toggleMenu()">Seção 1</a></li>
+    <li><a href="#section2" (click)="toggleMenu()">Seção 2</a></li>
+    <li><a href="#section3" (click)="toggleMenu()">Seção 3</a></li>
   </ul>
-
-  
 </nav>
-
-
-</section>
 <router-outlet></router-outlet>
