@@ -1,5 +1,5 @@
-<section class="middleContent" >
-  <section class="content" [ngClass]="{ 'open': menuOpen }">
+<section class="middleContent" [ngClass]="{ 'menu-open': menuOpen }">
+  <section class="content"  [ngClass]="{ 'open': menuOpen }">
     <div [innerHTML]="content"></div>
   </section>
 </section>

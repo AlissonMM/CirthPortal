@@ -17,5 +17,7 @@ export class MenuService {
 
   toggleMenu(): void {
     this.menuOpen.next(!this.menuOpen.value); // Alterna entre aberto/fechado
+
+    console.log("menu is " + this.menuOpen.value);
   }
 }

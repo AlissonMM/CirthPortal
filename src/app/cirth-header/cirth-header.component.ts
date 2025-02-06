@@ -9,7 +9,6 @@ import { NgClass } from '@angular/common';
   standalone: true,
   templateUrl: './cirth-header.component.html',
   styleUrl: './cirth-header.component.css',
-  providers: [MenuService],
 })
 export class CirthHeaderComponent {
   constructor(private menuService: MenuService) { }

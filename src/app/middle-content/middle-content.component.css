@@ -1,38 +1,45 @@
-.middleContent{
-    position: fixed; /* Mantém fixo na tela */
+.middleContent {
+    position: fixed;
+    /* Mantém fixo na tela */
     top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centraliza exatamente */
+    transform: translate(-50%, -50%);
+    /* Centraliza exatamente */
     display: flex;
     width: 80%;
-    height: 92%; /* Ajustado para melhor proporção */
+    height: 92%;
+    /* Ajustado para melhor proporção */
     align-items: center;
     justify-content: center;
+    transition: 0.8s ease;
 
 }
 
 .middleContent.menu-open {
-    transform: translate(-100%, -50%); /* Empurra para a esquerda quando o menu estiver aberto */
+    left: 65%;
+    transition: 0.8s ease;
 }
 
-p{
+p {
     text-align: justify;
 }
 
-span{
+span {
     font-weight: bolder;
     color: #e1db88;
-    
+
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-    background-color: #282832;;
+    background-color: #282832;
+    ;
 }
 
-th, td {
+th,
+td {
     border: 1px solid black;
     padding: 10px;
     text-align: center;
@@ -57,36 +64,21 @@ th {
     font-size: 20px;
     gap: 0vh;
     overflow: auto;
-    font-family: 'CirthFont',;
-  
-    
+
 }
 
 .content.open {
-    display: flex;
     width: 80vh;
-    background-color: #a92727;
-    border-radius: 25px;
-    height: 90%;
-    padding: 3vh;
-    flex-direction: column;
-    color: #c6d6d6;
-    align-items: center;
-    font-size: 20px;
-    gap: 0vh;
-    overflow: auto;
-    font-family: 'CirthFont',;
-  
-    
+
 }
 
-.content a{
+.content a {
     text-decoration: none;
-    cursor: auto ;
-    
+    cursor: auto;
+
 }
 
-.content h1{
+.content h1 {
     color: #c6d6d6;
     font-size: 30px;
     line-height: 5px;
@@ -94,7 +86,7 @@ th {
 }
 
 
-.content h2{
+.content h2 {
     color: #c6d6d6;
     font-size: 28px;
     line-height: 35px;
@@ -103,38 +95,38 @@ th {
 
 }
 
-.fragment{
+.fragment {
     background-color: #282832;
     color: #c6d6d6;
     border-radius: 5px;
     padding: 3vh;
 }
 
-.fragment h2{
+.fragment h2 {
     color: #a92727;
 }
 
-.cirth{
+.cirth {
     font-family: 'CirthFont';
     font-size: medium;
     text-align: center;
     font-weight: lighter;
 }
 
-.tengwar{
+.tengwar {
     font-family: 'TengwarFont';
     font-size: larger;
     text-align: center;
     font-weight: lighter;
 }
 
-.tengwarAnnatar{
+.tengwarAnnatar {
     font-family: 'TengwarAnnatar';
     font-size: larger;
     text-align: center;
 }
 
-.explanation{
+.explanation {
     font-size: 20px;
-   font-style: italic;
+    font-style: italic;
 }

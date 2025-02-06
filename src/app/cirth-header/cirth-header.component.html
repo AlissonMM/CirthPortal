@@ -1,17 +1,24 @@
+<link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet">
 <header class="header">
   <div class="container">
     <button class="menu-btn" (click)="toggleMenu()">☰</button>
-    <img src="/CirthPortalLogo.png" alt="logo" id="logo" />
+    <div class="centerHeader">
+      <h2 class="title" [ngClass]="{ 'open': menuOpen }"> Cirth Portal</h2>
+      <div class="logo" [ngClass]="{ 'open': menuOpen }">
+        <img src="/CirthPortalLogo.png" alt="logo" id="logo" />
+      </div>
+
+    </div>
   </div>
 </header>
 
 <!-- Menu Lateral -->
 <nav class="side-menu" [ngClass]="{ 'open': menuOpen }">
-  <button class="close-btn" (click)="toggleMenu()">×</button>
   <ul>
     <li><a routerLink="/" (click)="toggleMenu()">Home</a></li>
-    <li><a routerLink="/cirth-page" (click)="toggleMenu()">Cirth Page</a></li>
+    <li><a routerLink="cirth-page" (click)="toggleMenu()">Cirth Page</a></li>
     <li><a routerLink="tengwar" (click)="toggleMenu()">Tengwar</a></li>
+    <li><a routerLink="translator" (click)="toggleMenu()">Tradutor</a></li>
   </ul>
 </nav>
 
