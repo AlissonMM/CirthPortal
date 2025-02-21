@@ -130,3 +130,20 @@ th {
     font-size: 20px;
     font-style: italic;
 }
+
+input{
+    width: 97%;
+    color: white;
+    background-color: #282832;
+    border-radius: 10px;
+    border: none;
+    font-size: 4vh;
+    height: 10vh;
+    padding-left: 20px;
+    
+}
+
+.cirthInput{
+    font-family: 'CirthFont';
+    text-align: center;
+}

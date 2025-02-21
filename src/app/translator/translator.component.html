@@ -1,1 +1,21 @@
-<p>translator works!</p>
+<app-middle-content content='
+<section>
+    <h1>Tradutor Cirth</h1>
+
+    
+
+    <input type="text" name="writtenName" placeholder="Digite seu texto aqui" [(ngModel)]="originalText"/>
+
+    <p> <em> Aqui você pode transformar qualquer texto em runas, a partir de uma fonte que simula as Cirth Erebor!</em></p>
+</section> 
+
+<br/>
+<h1>Aqui está sua tradução!</h1>
+
+<input class="cirthInput" type="text" [value]="originalText" placeholder="BARUK KHAZAD" readonly/>
+
+'> 
+
+
+
+</app-middle-content>

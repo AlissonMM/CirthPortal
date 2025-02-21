@@ -1,22 +1,27 @@
 import { Component, Input, ViewEncapsulation, AfterViewInit, OnChanges, SimpleChanges, ChangeDetectorRef, OnInit } from '@angular/core';
 import { MenuService } from '../menu-service.service';
 import { NgClass } from '@angular/common';
+import { NgModel } from '@angular/forms';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-middle-content',
-  standalone: true,
-  imports:[NgClass],
   templateUrl: './middle-content.component.html',
+  imports:[NgClass],
   styleUrls: ['./middle-content.component.css'],
-
-  encapsulation: ViewEncapsulation.None, // REMOVE o encapsulamento de estilos
+  encapsulation: ViewEncapsulation.None,
 })
 
 export class MiddleContentComponent implements OnInit {
-  @Input() content: string = 'Default Content';
+  originalText: string = ''; 
+  safeContent: SafeHtml = 'Default Content';
   menuOpen = false;
 
-  constructor(private menuService: MenuService, private cdr: ChangeDetectorRef) {}
+  @Input() set content(value: string) {
+    this.safeContent = this.sanitizer.bypassSecurityTrustHtml(value); // 🚀 Permite HTML seguro
+  }
+
+  constructor(private menuService: MenuService, private cdr: ChangeDetectorRef, private sanitizer: DomSanitizer) {}
 
   ngOnInit(): void {
     this.menuService.menuOpen$.subscribe((isOpen: boolean) => {
